@@ -1,0 +1,317 @@
+/* Adding fonts */
+@font-face {
+    font-family: 'p1';
+    src: url('fonts/semi-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'p2';
+    src: url('fonts/regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'p3';
+    src: url('fonts/black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'p4';
+    src: url('fonts/bold.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+html.graphs, body.graphs{
+    height: 200%;
+} 
+html.grafana, body.grafana {
+    height: 350%
+}
+
+
+
+/* Style for the header */
+nav {
+    font-family: 'p4';
+}
+
+ul {
+    padding: 0.5px 10px;
+}
+
+li {
+    border: none;
+    padding: 1px 0.5%;
+    text-align: center;
+    display: inline-block;
+}
+
+.item {
+    height: 25px;
+    text-align: left;
+    position: relative;
+    background-color: #cecece;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.15s ease-in-out;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.item a {
+    text-align: left;
+    position: relative;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* The hover function allows you to change the style when the mouse passes over it */
+.item:hover {
+    background: linear-gradient(to bottom right, #93c2e1, #d88f87);
+    transform: scale(1.05);
+}
+
+header {
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    padding: 1px;
+    margin: 10px;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: 'p4';
+}
+
+/* Style for the homepage */
+.acc {
+    height: 400px;
+    width: 700px;
+    border-radius: 20px;
+}
+
+.acc:hover {
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.8);
+    transform: scale(1.03);
+    transition: transform 0.15s ease-in-out;
+}
+
+.choix1 {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    margin: 30px;
+    background-color: #d76565;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.choix2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #65a2d7;
+    border-radius: 10px;
+    min-height: 513px;
+    text-align: center;
+    margin: 30px;
+}
+
+/* Style for tables */
+table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-family: 'p1';
+}
+
+td {
+    font-family: 'p2';
+}
+
+/* style for clickable buttons */
+.a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'p2';
+    font-size: 18px;
+    background-color: #222e50;
+    border-radius: 20px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.a:hover {
+    box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
+    transition: transform 0.15s ease-in-out;
+}
+
+/* style for the map display */
+.divplan {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: fit-content;
+    max-height: fit-content;
+    background-color: #ff8282;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.plan {
+    border-radius: 5px;
+}
+
+h2 {
+    font-family: 'p1';
+}
+
+.rt {
+    text-align: center;
+    background-color: #65a2d7;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.gim {
+    text-align: center;
+    background-color: #ff6e6e;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.etage {
+    display: flex;
+    align-items: start;
+}
+
+.black {
+    background-color: #000000;
+}
+
+/* style for the footer */
+footer {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    font-family: 'p2';
+    padding: 5px;
+    text-align: center;
+}
+
+/* Style for proper display of various pages */
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.login-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-form {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-family: 'p4';
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'p2';
+}
+
+.login-form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'p2';
+    text-align: left;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #65a2d7;
+    color: white;
+    font-family: 'p2';
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #5089b6;
+}
+
+/* Ensure footer stays at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}

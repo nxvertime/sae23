@@ -1,0 +1,205 @@
+/* styles.css */
+
+/* Adding fonts */
+@font-face {
+    font-family: 'p1';
+    src: url('fonts/semi-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'p2';
+    src: url('fonts/regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'p3';
+    src: url('fonts/black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'p4';
+    src: url('fonts/bold.ttf') format('truetype');
+}
+
+
+/* Style for the header */
+nav {
+    font-family: 'p4';
+}
+
+ul {
+    padding: 0.5px 10px;
+}
+
+li {
+    border: none;
+    padding: 1px 0.5%;
+    text-align: center;
+    display: inline-block;
+}
+
+.item {
+    height: 25px;
+    text-align: left;
+    position: relative;
+    background-color: #cecece;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.15s ease-in-out;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.item a {
+    text-align: left;
+    position: relative;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* The hover function allows you to change the style when the mouse passes over it */
+.item:hover {
+    background: linear-gradient(to bottom right, #93c2e1, #d88f87);
+    transform: scale(1.05);
+}
+
+header {
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    padding: 1px;
+    margin: 10px;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: 'p4';
+}
+
+/* Style for the homepage */
+.acc {
+    height: 400px;
+    width: 700px;
+    border-radius: 20px;
+}
+
+.acc:hover {
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.8);
+    transform: scale(1.03);
+    transition: transform 0.15s ease-in-out;
+}
+
+.choix1 {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    margin: 30px;
+    background-color: #d76565;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.choix2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #65a2d7;
+    border-radius: 10px;
+    min-height: 513px;
+    text-align: center;
+    margin: 30px;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], select {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
